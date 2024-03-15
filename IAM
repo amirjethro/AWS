@@ -1,0 +1,38 @@
+IAM (Identity and Access Management) is a key service in Amazon Web Services that allows you to manage access to AWS services and resources securely. Here are some core concepts in AWS IAM that you need to know  
+
+1. User's 
+Definitions - Represent an individual or an application that interacts with AWS resources. 
+Key Points - Users have unique credentials and can be assigned policies to define their permissions. 
+
+2 Groups 
+Definitions - A collection of IAM users. You can assign permissions to a group, and users added to the group inherit those permissions 
+Key points - Groups simplify permissions management by allowing you to apply policies to multiple users simultaneously 
+
+3. Roles 
+Definitions - Similar to users, but meant for AWS services and applications running on AWS credentials with defined permissions 
+
+4. Policies 
+Definitions - JSON documents that define permissions. They can be attached to users, groups, or roles. 
+Key points - Policies specify what actions are allowed or denied on what resources and under what conditions 
+
+5. Permissions 
+Definition - Actions that can be performed on AWS resources. Permissions are granted through policies 
+Key Points - IAM uses the principle of least privilege, granting only the minimum permissions necessary to perform a task  
+
+6. ARN (Amazon Resource Name) 
+Definitions - A unique identifier is assigned to each AWS Resource. 
+Key Points -  ARNs are used in IAM policies to specify resources and their permissions 
+
+7. MFA (Multi-Factor Authentication) 
+Definition - A security feature that requires users to present two or more forms of authentication before they can access AWS resources 
+Key Points - Enhances security by adding an extra layer of protection beyond just a password 
+
+8. IAM Endpoints 
+Definitions - A URL that is specific to a region and allows programmatic access to IAM functionality. 
+Key Points -  Used for making IAM API calls in specific AWS region 
+
+9. IAM Roles for EC2 Instances 
+Definition - Roles that can be assigned to EC2 instances, allowing them to access other AWS resources. 
+Key Points - Commonly used for granting permissions to resources without embedding long-term credentials in code 
+
+Understanding and effectively using these IAM concepts is crucial for managing access and ensuring the security of your AWS environment. Proper IAM configuration helps enforce the principle of least privilege, enhancing overall security posture.  
